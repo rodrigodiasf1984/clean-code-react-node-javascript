@@ -1,55 +1,71 @@
 // Nomenclatura de variáveis
 
-const list = [
+const categories = [
   {
     title: 'User',
     followers: 5
   },
   {
     title: 'Friendly',
-    followers: 50,
+    followers: 50
   },
   {
     title: 'Famous',
-    followers: 500,
+    followers: 500
   },
   {
     title: 'Super Star',
-    followers: 1000,
-  },
+    followers: 1000
+  }
 ]
 
-export default async function getData(req, res) {
-  const github = String(req.query.username)
+export default async function getUserAndCategoryFromGitHub(
+  request: {
+    query: {
+      username: string
+    }
+  },
+  response: { status?: any }
+) {
+  const userName = String(request.query.username)
 
-  if (!github) {
-    return res.status(400).json({
+  if (!userName) {
+    return response.status(400).json({
       message: `Please provide an username to search on the github API`
     })
   }
 
-  const response = await fetch(`https://api.github.com/users/${github}`);
+  const userInfo = await fetch(`https://api.github.com/users/${userName}`)
 
-  if (response.status === 404) {
-    return res.status(400).json({
-      message: `User with username "${github}" not found`
+  if (userInfo.status === 404) {
+    return response.status(400).json({
+      message: `User with username "${userName}" not found`
     })
   }
 
-  const data = await response.json()
+  const user = await userInfo.json()
 
-  const orderList = list.sort((a, b) =>  b.followers - a.followers); 
+  const orderedCategoriesByFollowers = categories.sort(
+    (categoryA, categoryB) => categoryB.followers - categoryA.followers
+  )
 
-  const category = orderList.find(i => data.followers > i.followers)
+  const findCategoryByUser = orderedCategoriesByFollowers.find(
+    (category) => user.followers > category.followers
+  )
 
-  const result = {
-    github,
-    category: category.title
+  const userNameAndCategory = {
+    userName,
+    category: findCategoryByUser.title
   }
 
-  return result
+  return userNameAndCategory
 }
 
-getData({ query: {
-  username: 'josepholiveira'
-}}, {})
+getUserAndCategoryFromGitHub(
+  {
+    query: {
+      username: 'josepholiveira'
+    }
+  },
+  {}
+)
