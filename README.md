@@ -1,18 +1,20 @@
 # clean-code-react-node-javascript
 
-### Desafio 1: Nomeação de variáveis
+### Challenge 1: Variable naming
 
-### Sobre o desafio
+#### About the Challenge
+<p>
+The code in which you will practice these concepts consists of a function that gets a username from Github and returns the same user with a category.
+</p>
+<p>
+The categories will be assigned to the user according to the number of their followers on Github, where if the number of followers is greater than or equal to the minimum number that each category requires, the category that has the most followers will be returned.
+</p>
+The categories will be as follows:
 
-O código em que que você vai praticar esses conceitos consiste em uma função que recebe um nome de usuário do Github e retorna o mesmo usuário com uma categoria.
-
-As categorias serão atribuídas ao usuário de acordo com o número de seus seguidores no Github, onde caso o número de seguidores seja maior ou igual ao número mínimo que cada categoria necessita, será retornada a categoria que possuir o maior `mínimo de seguidores` possível.
-
-As categorias serão as seguintes:
-
-- **User**: Preciso no mínimo 5 seguidores para receber essa categoria
-- **Friendly:** Preciso no mínimo 50 seguidores para receber essa categoria
-- **Famous**: Preciso no mínimo 500 seguidores para receber essa categoria
-- **Super** **Star**:  Preciso no mínimo 1000 seguidores para receber essa categoria
-
-Seu objetivo nesse código não é corrigir ou implementar o seu funcionamento, pois ele já funciona, mas você deve renomear variáveis ou até atributos de objetos de acordo com o que foi aprendido, dando sentindo às variáveis de acordo com as regras acima.
+1. User: I need at least 5 followers to receive this category
+2. Friendly: I need at least 50 followers to receive this category
+3. Famous: I need at least 500 followers to receive this category
+4. Super Star: I need at least 1000 followers to receive this category
+<p>
+Your goal in this code is not to correct or implement its operation, because it already works, but you should rename variables or even object attributes according to what you have learned, giving meaning to the variables according to the rules above.
+</p>
