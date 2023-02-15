@@ -1,12 +1,12 @@
 // Causa vs Efeito
-import { useEffect, useState } from "react"
+import { useEffect, useState } from 'react'
 
 interface User {
-  name: string;
-  github: string;
+  name: string
+  github: string
 }
 
-function fetchUser() {
+function getUserFromGitHub() {
   return {
     data: {
       user: {
@@ -18,33 +18,31 @@ function fetchUser() {
 }
 
 export function UserProfile() {
-  const [shouldNotRenderUserName, setShouldNotRenderUserName] = useState(false)
-  const [userData, setUserData] = useState<User>()
+  const [isGettingUserInfo, setIsGettingUserInfo] = useState(false)
+  const [user, setUser] = useState<User>()
 
   useEffect(() => {
-    function loadUser() {
-      setShouldNotRenderUserName(true)
+    function getUserInfo() {
+      setIsGettingUserInfo(true)
 
-      const fetchUserResponse = fetchUser()
+      const userInfo = getUserFromGitHub()
 
-      setUserData(fetchUserResponse.data.user)
-      
-      setShouldNotRenderUserName(false)
+      setUser(userInfo.data.user)
+
+      setIsGettingUserInfo(false)
     }
 
-    loadUser()
+    getUserInfo()
   })
 
-  if (shouldNotRenderUserName) {
+  if (isGettingUserInfo) {
     return <p>Loading...</p>
   }
 
   return (
     <div>
-      <img src={`${userData?.github}.png`} alt="" />
-      <a href={userData?.github}>{userData?.name}</a>
+      <img src={`${user?.github}.png`} alt='' />
+      <a href={user?.github}>{user?.name}</a>
     </div>
   )
 }
-
-
