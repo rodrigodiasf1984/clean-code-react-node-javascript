@@ -31,10 +31,18 @@ To ride your favourite toy, Diego just needs to be over 130cm tall.
 
 Your goal in this code is not to fix or implement how it works because it already works, but you should rename variables or even attributes of objects according to what you have learned, giving meaning to the variables according to the rules above.
 
-# Challenge 3: Cause vs. Effect
+###  Challenge 3: Cause vs. Effect
 
 The code in which you will practice these concepts contains logic from a React component that makes a call to a function that returns user data.
 
 While the user data is not returned, the `Loading` behaviour is displayed on the screen so that the screen is not blank.
+
+Your goal in this code is not to fix or implement how it works because it already works, but you should rename variables or even object attributes according to what you have learned, giving meaning to the variables according to the rules above.
+
+###  Challenge 4 : Code in English
+
+In this challenge, you'll put into practice everything you've just learned in the `English Code` class from the Clean Code course.
+
+The code in which you will practice these concepts contains logic from a React component that filters a list of products to display on the screen only the products that the user searches for when typing in the input.
 
 Your goal in this code is not to fix or implement how it works because it already works, but you should rename variables or even object attributes according to what you have learned, giving meaning to the variables according to the rules above.
