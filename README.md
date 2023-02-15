@@ -30,3 +30,11 @@ To enter the park there are some rules:
 To ride your favourite toy, Diego just needs to be over 130cm tall.
 
 Your goal in this code is not to fix or implement how it works because it already works, but you should rename variables or even attributes of objects according to what you have learned, giving meaning to the variables according to the rules above.
+
+# Challenge 3: Cause vs. Effect
+
+The code in which you will practice these concepts contains logic from a React component that makes a call to a function that returns user data.
+
+While the user data is not returned, the `Loading` behaviour is displayed on the screen so that the screen is not blank.
+
+Your goal in this code is not to fix or implement how it works because it already works, but you should rename variables or even object attributes according to what you have learned, giving meaning to the variables according to the rules above.
