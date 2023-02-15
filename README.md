@@ -46,3 +46,16 @@ In this challenge, you'll put into practice everything you've just learned in th
 The code in which you will practice these concepts contains logic from a React component that filters a list of products to display on the screen only the products that the user searches for when typing in the input.
 
 Your goal in this code is not to fix or implement how it works because it already works, but you should rename variables or even object attributes according to what you have learned, giving meaning to the variables according to the rules above.
+
+### Challenge: Conditional rules
+
+In this challenge, you'll put into practice everything you've just learned in the `Rules in Conditionals` class in the Clean Code course.
+
+The code in which you will practice these concepts contains a function that checks if a student will pass or fail at the end of the school year.
+
+To pass, there are two rules:
+
+- Your grade must be greater than 7
+- Your absences must be less than 100
+
+Your goal in this code is not to fix or implement how it works because it already works, but to reorganize the code in order to apply what you have learned about conditional rules.
