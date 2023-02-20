@@ -47,7 +47,7 @@ The code in which you will practice these concepts contains logic from a React c
 
 Your goal in this code is not to fix or implement how it works because it already works, but you should rename variables or even object attributes according to what you have learned, giving meaning to the variables according to the rules above.
 
-### Challenge: Conditional rules
+### Challenge 5: Conditional rules
 
 In this challenge, you'll put into practice everything you've just learned in the `Rules in Conditionals` class in the Clean Code course.
 
@@ -59,3 +59,19 @@ To pass, there are two rules:
 - Your absences must be less than 100
 
 Your goal in this code is not to fix or implement how it works because it already works, but to reorganize the code in order to apply what you have learned about conditional rules.
+
+### Challenge 6: `Parameters and destructuring
+
+In this challenge, you will put into practice everything you have just learned in the `Parameters and destructuring` class in the Clean Code course.
+
+# About the challenge
+
+The code in which you will practice these concepts contains functions that handle updating a user's data from a route that will receive the following data:
+
+`body: { name, email, password }`
+
+`params: { id }`
+
+Your goal in this code is to apply the concepts you have learned in class by making the code clearer about what the `body`, `params` and `data` parameters receive, no implementation of functionality is required to complete the challenge.
+
+Translated with www.DeepL.com/Translator (free version)
