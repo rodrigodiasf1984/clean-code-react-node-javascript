@@ -72,3 +72,13 @@ The code in which you will practice these concepts contains functions that handl
 
 Your goal in this code is to apply the concepts you have learned in class by making the code clearer about what the `body`, `params` and `data` parameters receive, no implementation of functionality is required to complete the challenge.
 
+The code in which you will practice these concepts contains functions that deal with checking updates to an application and calculating a discount, where:
+
+### Challenge 7: Magic numbers
+
+1. The checking time for an update via `setInterval` is done every 30 minutes.
+2. The discount calculations must have the price in cents and the discount in percent.
+
+Your goal in this code is to apply the concepts learned in class by making it clearer to the code what these magic numbers refer to, no implementation of functionality is required to complete the challenge.
+
+
