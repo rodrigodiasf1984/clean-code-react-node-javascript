@@ -64,8 +64,6 @@ Your goal in this code is not to fix or implement how it works because it alread
 
 In this challenge, you will put into practice everything you have just learned in the `Parameters and destructuring` class in the Clean Code course.
 
-# About the challenge
-
 The code in which you will practice these concepts contains functions that handle updating a user's data from a route that will receive the following data:
 
 `body: { name, email, password }`
