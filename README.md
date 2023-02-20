@@ -82,3 +82,16 @@ The code in which you will practice these concepts contains functions that deal 
 Your goal in this code is to apply the concepts learned in class by making it clearer to the code what these magic numbers refer to, no implementation of functionality is required to complete the challenge.
 
 
+### Challenge 8: Comments vs Documentation
+
+In this challenge you will put into practice everything you have just seen in the `Comments vs Documentation` class in the **Clean Code.** course
+
+The code in which you will practice these concepts contains a function responsible for registering the user in the database. However, before you can register the user in the database you need to perform some steps:
+
+- Validations
+- Conversion of the avatar to JPG.
+
+Your goal in this code is to apply the concepts learned in class, removing as many comments as possible. Remember that it is valid to rewrite a piece of code to make it clearer, thus eliminating the need for comments.
+
+
+
