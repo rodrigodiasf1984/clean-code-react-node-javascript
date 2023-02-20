@@ -72,4 +72,3 @@ The code in which you will practice these concepts contains functions that handl
 
 Your goal in this code is to apply the concepts you have learned in class by making the code clearer about what the `body`, `params` and `data` parameters receive, no implementation of functionality is required to complete the challenge.
 
-Translated with www.DeepL.com/Translator (free version)
