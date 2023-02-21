@@ -94,4 +94,17 @@ The code in which you will practice these concepts contains a function responsib
 Your goal in this code is to apply the concepts learned in class, removing as many comments as possible. Remember that it is valid to rewrite a piece of code to make it clearer, thus eliminating the need for comments.
 
 
+### Challenge 9: Syntatic Sugars
+
+In this challenge you will put into practice everything you have just seen in the `Syntatic Sugars` class in the **Clean Code.** course
+
+The code in which you'll practice these concepts has one objective: take the first 5 values from an app's rating array, sum them, and return the result and current time. To do this we have two functions:
+
+- `sumFirstFiveRatings`: this function should return an object with the sum of the first 5 ratings and the current time in timestamp (in case you are not sure about this format, it is the number of seconds that have passed since January 1, 1970). However, if ratings are `falsy' or do not have at least 5 values, it should return the respective errors.
+- `getFirstFiveRatings`: this function should return the first 5 values of the rating array if it is at least 5. If this condition is not met, it should return `false`.
+
+Your goal in this code is to apply the concepts you have learned in class, removing as much `syntactic sugar` as possible from your code. Remember that shorter code is not always better.
+
+
+
 
